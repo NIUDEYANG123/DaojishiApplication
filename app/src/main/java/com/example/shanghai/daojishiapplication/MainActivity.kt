@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //startActivity(Intent(this,MessageActivity::class.java)) 与service通信
+         // startActivity(Intent(this,ReceiveBroadcastActivity::class.java))
         tv.setOnClickListener{v->startActivity(Intent(this,Sample5Activity::class.java))}
         tv_invocation.setOnClickListener{
             v->
@@ -37,5 +40,9 @@ class MainActivity : AppCompatActivity() {
                }
             }
         }
+
+        tv_messenger.setOnClickListener { v-> startActivity(Intent(this,MessageActivity::class.java))}
+        tv_start_app.setOnClickListener { v-> startActivity(Intent(this,ReceiveBroadcastActivity::class.java))}
+        tv_broadcast.setOnClickListener {  v-> startActivity(Intent(this,ReceiveBroadcastActivity::class.java))}
     }
 }

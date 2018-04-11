@@ -14,7 +14,7 @@ import java.lang.reflect.Proxy;
 
 public class DynProxyFactory {
 
-    public static Subject getInstance(int i) {
+    public static Subject getInstance() {
         Subject s = new RealSubject();
         InvocationHandler invocationHandler = new InvocationHandlerImpl(s);
         Subject proxy = null;

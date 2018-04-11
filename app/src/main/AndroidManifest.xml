@@ -17,6 +17,27 @@
             </intent-filter>
         </activity>
         <activity android:name=".Sample5Activity" />
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.example.shanghai.daojishiapplication.service.MyService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.ProvideService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.shanghai.daojishiapplication.action.AIDL" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".ReceiveBroadcastActivity"></activity>
     </application>
 
 </manifest>
