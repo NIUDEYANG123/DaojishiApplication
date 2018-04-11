@@ -45,4 +45,6 @@ class MainActivity : AppCompatActivity() {
         tv_start_app.setOnClickListener { v-> startActivity(Intent(this,ReceiveBroadcastActivity::class.java))}
         tv_broadcast.setOnClickListener {  v-> startActivity(Intent(this,ReceiveBroadcastActivity::class.java))}
     }
+
+
 }
