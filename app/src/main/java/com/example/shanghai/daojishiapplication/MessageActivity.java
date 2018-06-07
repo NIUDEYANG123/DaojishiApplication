@@ -4,8 +4,11 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.RemoteException;
@@ -45,7 +48,6 @@ public class MessageActivity extends AppCompatActivity {
         send.setOnClickListener(v -> {
             sayHello();
         });
-
 
         unbind.setOnClickListener(v -> {
             if (mBound) {

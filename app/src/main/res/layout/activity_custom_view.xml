@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomViewActivity">
+    <!--<com.example.shanghai.daojishiapplication.custom.RainDrop
+        android:id="@+id/rain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />-->
+    <!--<com.example.shanghai.daojishiapplication.custom.WaveLayout
+        android:id="@+id/wl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <com.example.shanghai.daojishiapplication.custom.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </com.example.shanghai.daojishiapplication.custom.WaveLayout>-->
+    <!--<com.example.shanghai.daojishiapplication.custom.WatchView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="#00ff00" />-->
+    <!--  <com.example.shanghai.daojishiapplication.custom.ShowPercentView
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:id="@+id/myShowPercentView"
+          android:background="#fdda6f"
+          app:percent="82"
+          app:allLineColor="#ebebeb"
+          app:percentLineColorLow="#8acb55"
+          app:percentLineColorHight="#8acb55"
+          />-->
+    <!-- <com.example.shanghai.daojishiapplication.custom.RoundProgressBarView
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         app:roundWidth="8dp"
+         app:padding="10dp"
+         app:pointWidth="8dp"
+         app:digree="0"
+         app:roundColor="#3300d1d1"
+         app:roundProgressColor="#3300d1d1"
+         />-->
+    <com.example.shanghai.daojishiapplication.custom.CustomVolumControlBar
+        android:id="@+id/volum_bar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:bg="@mipmap/ic_launcher_round"
+        app:circleWidth="8dp"
+        app:dotCount="12"
+        app:firstColor="#bf000000"
+        app:secondColor="#00ff00"
+        app:splitSize="10" />
+
+    <com.example.shanghai.daojishiapplication.custom.ShimmerTextView
+        android:id="@+id/shimmer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="我是shimmerTextview"
+        android:textColor="#62d90e0e"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/volum_bar" />
+
+    <com.example.shanghai.daojishiapplication.custom.SaleProgressView
+        android:id="@+id/spv"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/shimmer"
+        app:nearOverText="@string/nearOverText"
+        app:overText="@string/overText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/spv">
+
+        <com.example.shanghai.daojishiapplication.custom.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="点击涟漪效果" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

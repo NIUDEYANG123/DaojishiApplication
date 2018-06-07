@@ -45,7 +45,7 @@ public class ReceiveBroadcastActivity extends AppCompatActivity {
     }
 
       static class MyReceiver extends BroadcastReceiver
-    {
+      {
         @Override
         public void onReceive(Context context, Intent intent) {
             // TODO Auto-generated method stub

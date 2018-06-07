@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="firstColor" format="color" />
+    <attr name="secondColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="dotCount" format="integer" />
+    <attr name="splitSize" format="integer" />
+    <attr name="bg" format="reference"></attr>
+
+    <declare-styleable name="ShowPercentView">
+        <attr name="percent" format="integer"></attr>
+        <attr name="allLineColor" format="color" />
+        <attr name="percentLineColorLow" format="color" />
+        <attr name="percentLineColorHight" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBarView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="pointWidth" format="dimension" />
+        <attr name="digree" format="integer" />
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+    </declare-styleable>
+   <!--控制音量的bar-->
+    <declare-styleable name="CustomVolumControlBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="dotCount" />
+        <attr name="splitSize" />
+        <attr name="bg" />
+    </declare-styleable>
+    <!--淘宝进度条-->
+    <declare-styleable name="SaleProgressView">
+        <attr name="sideColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="sideWidth" format="dimension" />
+        <attr name="overText" format="string" />
+        <attr name="nearOverText" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="isNeedAnim" format="boolean" />
+    </declare-styleable>
+</resources>
